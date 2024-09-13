@@ -1,0 +1,272 @@
+:root{
+    --y0: -42px;
+    --y1: -567px;
+    --y2: -1096px;
+    --y3: -1626px;
+    --y4: -2152px;
+    --y5: -2682px;
+    --y6: -3211px;
+    --y7: -3736px;
+    --y8: -4267px;
+    --y9: -4795px;
+}
+
+.landing{
+    /* justify-content: space-around; */
+    height: calc(100vh);
+    max-height: 863px;
+    overflow: hidden;
+    position: relative;
+}
+.hero{
+    /* height: 400px; */
+    /* width: 956px; */
+    position: relative;
+    /* background: #000; */
+}
+
+.year-cont {
+    align-items: start;
+    height: 400px;
+    overflow: hidden;
+    /* width: 100%; */
+}
+.year-cont .img{
+    /* background: #b11313; */
+    margin-top: var(--y0) ;
+    width: 239px;
+    transition: margin-top 1.5s ease-out;
+}
+/* .year-cont .img:nth-child(1) {
+    margin-top: var(--y1);
+}
+.year-cont .img:nth-child(2) {
+    margin-top: var(--y9);
+}
+.year-cont .img:nth-child(3) {
+    margin-top: var(--y8);
+}
+.year-cont .img:nth-child(4) {
+    margin-top: var(--y4);
+} */
+.j1{
+    position: absolute;
+    width: 239px;
+    opacity: 0;
+}
+.j1_s1{
+    transform: scaleX(-1) rotate(341deg) scale(.8);
+    top: 11px;
+    left: 246px;
+    filter: drop-shadow(8px 16px 16px #000);
+}
+.j1_s2{
+    transform: rotate(341deg) scale(1.5);
+    right: 293px;
+    top: 57px;
+    filter: drop-shadow(8px 16px 16px #000);
+}
+.bg-rect {
+    position: absolute;
+    height: 219px;
+    width: 820px;
+    top: 134px;
+    left: 65px;
+    z-index: -9;
+    border-radius: 44px;
+}
+.unstroke{
+    background: var(--active-bgcolor);
+    /* transform: rotate(333deg); */
+    rotate: 349deg;
+}
+.stroke{
+    /* transform: rotate(338deg); */
+    border: 4px solid #fff;
+    background: transparent;
+    rotate: 346deg;
+}
+.shoe-info{
+    margin: 1.7em 0;
+}
+.shoe-info h1 {
+    font-size:2.5em;
+    opacity: 0;
+}
+.shoe-info p{
+    width: 34em;
+    text-align: center;
+    height: 5em;
+    opacity: 0;
+    /* background-color: #505050; */
+    /* font-size:1.2em; */
+}
+.change-btn{
+    gap: 1em;
+    margin-bottom: 1.7em;
+    z-index: 20;
+}
+.disable-btn{
+    opacity: 0.8;
+}
+
+.btn1{
+    --btn: 60px;
+    width: var(--btn);
+    height: var(--btn);
+    background-color: var(--active-bgcolor);
+    border: 2px solid var(--change-btn-border);
+    border-radius: 50px;
+    color: #ffffff;
+    box-shadow: 3px 4px 13px 0px #505050;
+    font-size: 1.5em;
+}
+.btn1:active{
+    scale: 0.9;
+}
+.btn1:disabled{
+    opacity: 0.8;
+    scale: 1;
+}
+@media (min-height: 738px){
+    .shoe-info h1 {
+        font-size:3.5em;
+    }
+    .shoe-info p{
+        font-size:1.2em;
+    }
+}
+
+@media (max-width: 955px) {
+    :root{
+        --y0: 1px;
+        --y1: -307px;
+        --y2: -616px; 
+        --y3: -927px; 
+        --y4: -1235px; 
+        --y5: -1546px; 
+        --y6: -1855px; 
+        --y7: -2162px; 
+        --y8: -2474px; 
+        --y9: -2783px;         
+    }
+    .hero{
+        margin-bottom: 3em;
+    }
+    .year-cont .img { 
+        width: 140px;
+    }
+    .year-cont {
+        height: 260px;
+    }
+    .j1{
+        width: 140px;
+    }
+    .j1_s1 {
+        top: 72px;
+        left: 153px;
+    }
+    .j1_s2 {
+        right: 176px;
+        top: 103px;
+    }
+    /* .year-cont .img:nth-child(1) {
+        margin-top: var(--y1);
+    }
+    .year-cont .img:nth-child(2) {
+        margin-top: var(--y9);
+    }
+    .year-cont .img:nth-child(3) {
+        margin-top: var(--y8);
+    }
+    .year-cont .img:nth-child(4) {
+        margin-top: var(--y4);
+    } */
+
+    .bg-rect {
+        position: absolute;
+        height: 153px;
+        width: 452px;
+        top: 101px;
+        left: 72px;
+    }
+    .nike #svg5{
+        width: 1500px;
+    }
+    .dot2 {
+        right: 36px;
+    }
+}
+@media (max-width: 565px) {
+    :root{
+        --y0: 1px;
+        --y1: -168px;
+        --y2: -339px; 
+        --y3: -510px; 
+        --y4: -679px; 
+        --y5: -850px; 
+        --y6: -1021px; 
+        --y7: -1190px; 
+        --y8: -1361px; 
+        --y9: -1531px;         
+    }
+    .hero{
+        margin-bottom: 4em;
+    }
+    .year-cont .img { 
+        width: 77px;
+    }
+    .year-cont {
+        height: 143px;
+        margin-bottom: 26px;
+    }
+    .j1{
+        width: 112px;
+    }
+    .j1_s1 {
+        top: 54px;
+        left: 51px;
+    }
+    .j1_s2 {
+        right: 63px;
+        top: 84px;
+    }
+    /* .year-cont .img:nth-child(1) {
+        margin-top: var(--y1);
+    }
+    .year-cont .img:nth-child(2) {
+        margin-top: var(--y9);
+    }
+    .year-cont .img:nth-child(3) {
+        margin-top: var(--y8);
+    }
+    .year-cont .img:nth-child(4) {
+        margin-top: var(--y4);
+    } */
+    .shoe-info p {
+        width: 100%;
+        padding: 0 2em;
+        text-align: center;
+        font-size: 0.9em;
+        height: 7em;
+    }
+    .dot{
+        display: none;
+    }
+    .nike {
+        top: 94px;
+    }
+    .nike #svg5{
+        width: 1500px;
+    }
+    .bg-rect {
+        position: absolute;
+        height: 153px;
+        width: 243px;
+        top: 55px;
+        left: 31px;
+    }
+    .nike #svg5 {
+        width: 1000px;
+    }
+}
