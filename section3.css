@@ -1,0 +1,137 @@
+.section3{
+    min-height: 100dvh;
+    /* width: var(--max-width); */
+    width: 100%;
+    position: relative;
+}
+.section3 svg{
+    position: absolute;
+    fill: #7d2424;
+    z-index: -10;
+}
+.text-cont{
+    /* width: 100dvw; */
+    position: relative;
+    /* width: 100%; */
+}
+.text-cont p{
+    /* overflow: hidden; */
+    font-size: 3em;
+    text-align: center;
+    text-wrap: pretty;
+    /* padding-right: 255px; */
+    width: 100%;
+    background-color: #ff0000;
+    border-radius: 10px;
+    /* border: 3px solid #fff; */
+    padding: 9px;
+}
+.text-cont p .log-span{
+    display: block;
+    /* opacity: 0; */
+}
+.slide_shoe{
+    position: absolute;
+    /* background-color: #cf141471; */
+    transform: scaleX(-1) rotate(332deg) scale(0.8);
+    right: 5px;
+    overflow: hidden;
+    height: 302px;
+}
+ 
+.peter{
+    color: #fff;
+    /* -webkit-text-stroke: 1.5px #ffffff; */
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding-top: 9px;
+    position: relative;
+    /* font-size: 1.3em; */
+    /* z-index: 20; */
+}
+.underhold{
+    position: relative;
+}
+.underline{
+    position: absolute;
+    background-color: #000000;
+    height: 5px;
+    /* width: 98%;/ */
+    left: 0;
+    bottom: 5px;
+    /* z-index: 0; */
+    /* transform: rotate(359deg); */
+}
+
+.peterImg{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 200px;
+    z-index: -1;
+    filter: drop-shadow(0px 0px 1px #fff );
+    opacity: 0;
+}
+.nikeFull{
+    position: absolute;
+    color: #ffffff52;
+    font-weight: 900;
+    font-size: 6em;
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    z-index: -10;
+}
+.nikeFull span{
+    margin-left: -50px;
+}
+.nikestroke{
+    -webkit-text-stroke: #ff00006e 0.1px;
+    color: transparent;
+}
+.sectionimg{
+    position: absolute;
+    height: 600px;
+    z-index: -5;
+    overflow: hidden;
+}
+
+.j1sec{
+    margin-top: -230px;
+    width: 600px;
+    transform: rotate(333deg);
+}
+
+@media (max-width: 1205px) {
+    .text-cont p{
+        font-size: 2em;
+    }
+    .peterImg{
+        width: 150px;
+    }    
+    .nikestroke{
+        -webkit-text-stroke: #ff00006e 0.1px;
+        color: transparent;
+    }
+}
+@media (max-width: 588px) {
+    .text-cont p{
+        font-size: 1.5em;
+    }
+    .peterImg{
+        width: 125px;
+    }    
+    .nikestroke{
+        -webkit-text-stroke: #ff00006e 0.1px;
+        color: transparent;
+    }
+}
+@media (max-width: 812px) {
+    .text-cont p{
+        width: 90%;
+    }
+    .nikestroke{
+        -webkit-text-stroke: #ff00006e 0.1px;
+        color: transparent;
+    }
+}
